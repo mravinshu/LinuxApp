@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "586828818544",
+    "firebase_url": "https://linuxdownloads-e8975-default-rtdb.firebaseio.com",
+    "project_id": "linuxdownloads-e8975",
+    "storage_bucket": "linuxdownloads-e8975.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:586828818544:android:2cb481fd0c1e435f4bacb5",
+        "android_client_info": {
+          "package_name": "com.example.linux"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "586828818544-gjdir84kn5412mv4hh6hdcbncct4a5nq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrRI-nQgkKGYBDkNigxOT4rtVg3jKWdfg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "586828818544-gjdir84kn5412mv4hh6hdcbncct4a5nq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
