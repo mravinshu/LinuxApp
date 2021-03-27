@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Linux Downloads',
-      theme: ThemeData(),
+      theme: ThemeData.dark(),
       home: MyHomePage(title: 'Linux Downloads'),
     );
   }
@@ -29,8 +29,8 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   DatabaseReference dt;
   DatabaseReference linuxx;
-  String childdata = 'Debian';
   final refernceDatabase = FirebaseDatabase.instance;
+  String childdata = "Debian";
   @override
   void initState() {
     final FirebaseDatabase database = FirebaseDatabase(app: widget.app);
@@ -72,10 +72,18 @@ class _MyHomePageState extends State<MyHomePage> {
                       child: ListTile(
                           title: new Card(
                         elevation: 3,
-                        child: Text(
-                          snapshot.value['Name'],
-                          style:
-                              TextStyle(fontSize: deviceinfo.size.width / 19),
+                        child: Row(
+                          children: [
+                            Image(
+                              image: NetworkImage(snapshot.value['Image']),
+                              width: deviceinfo.size.width / 20,
+                            ),
+                            Text(
+                              snapshot.value['Name'],
+                              style: TextStyle(
+                                  fontSize: deviceinfo.size.width / 19),
+                            ),
+                          ],
                         ),
                       )),
                     );
@@ -97,9 +105,18 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: ListTile(
                         title: new Card(
                       elevation: 3,
-                      child: Text(
-                        snapshot.value['Linux'],
-                        style: TextStyle(fontSize: deviceinfo.size.width / 19),
+                      child: Row(
+                        children: [
+                          Image(
+                            image: NetworkImage(snapshot.value['Image']),
+                            width: deviceinfo.size.width / 20,
+                          ),
+                          Text(
+                            snapshot.value['Linux'],
+                            style:
+                                TextStyle(fontSize: deviceinfo.size.width / 19),
+                          ),
+                        ],
                       ),
                     )),
                   );
