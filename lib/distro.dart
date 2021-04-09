@@ -14,7 +14,10 @@ class Distro extends StatelessWidget {
   Widget build(BuildContext context) {
     MediaQueryData deviceinfo = MediaQuery.of(context);
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+          leading: Image(
+        image: AssetImage('images/logo.png'),
+      )),
       body: Row(
         children: [
           Container(
